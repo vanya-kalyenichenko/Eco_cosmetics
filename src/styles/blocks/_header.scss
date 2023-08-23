@@ -1,0 +1,51 @@
+.header {
+  &__top {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    // position: relative;
+    // right: 20px;
+    margin-bottom: 25px;
+
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 270px;
+    // background-image: url("../images/small__header__photo.svg");
+
+    @include onTablet {
+      height: 500px;
+      right: 0;
+      margin-bottom: 50px;
+      // background-image: url("../images/tablet__header__photo.png");
+    }
+  }
+
+  &__tagline {
+    margin-bottom: 10px;
+
+    &--style {
+      color: $black-color;
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  &__benefits {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-bottom: 100px;
+  }
+}

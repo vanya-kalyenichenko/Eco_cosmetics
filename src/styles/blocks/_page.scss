@@ -1,0 +1,14 @@
+.page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  color: $black-color;
+
+  &__body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: $beige-color;
+  }
+}

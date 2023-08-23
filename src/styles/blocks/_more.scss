@@ -1,0 +1,14 @@
+.more {
+  color: $green-color;
+  padding-bottom: 10px;
+  letter-spacing: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  transition: 0.3s;
+
+  &:hover {
+    width: fit-content;
+    border-bottom: 1px solid $green-color;
+  }
+}

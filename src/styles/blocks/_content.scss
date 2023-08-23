@@ -1,0 +1,158 @@
+.content {
+  &__choise {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    color: $green-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.9px;
+  }
+
+  &__brand {
+    color: $green-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    &--info {
+      margin: 10px 0 30px;
+      color: $black-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: normal;
+      text-transform: none;
+    }
+
+    &--more {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__shop {
+    margin-bottom: 20px;
+    text-align: center;
+    color: $green-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  &__navigation {
+    margin-bottom: 15px;
+    display: flex;
+    text-transform: uppercase;
+    color: $grey-color;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.7px;
+    transition: 0.3s;
+
+    &--chapter {
+      padding-bottom: 10px;
+
+      &:hover {
+        color: $black-color;
+        width: fit-content;
+        border-bottom: 2px solid $black-color;
+      }
+    }
+  }
+
+  &__photo {
+    margin-bottom: 20px;
+    position: relative;
+    right: 20px;
+    width: 100vw;
+    height: 320px;
+    background-image: url(../images/content__photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__oil {
+    margin-bottom: 10px;
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    margin-bottom: 30px;
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-bottom: 100px;
+  }
+
+  &__creators {
+    margin-bottom: 10px;
+    color: $green-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    &-info {
+      color: $black-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+
+      &--1 {
+        margin-bottom: 20px;
+      }
+
+      &--2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--button {
+      margin-bottom: 120px;
+    }
+
+    &--more {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__interactive {
+    &--info {
+      margin-bottom: 20px;
+      color: $green-color;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    &--photo {
+      width: 380px;
+      height: 395px;
+      background-image: url(../images/interactive__photo.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+  }
+}
