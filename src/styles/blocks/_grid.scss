@@ -13,24 +13,24 @@
     column-gap: 20px;
   }
 
+  &--tablet {
+    display: block;
+
+    @include onTablet {
+      display: grid;
+    }
+
+    @include onDesktop {
+      display: grid;
+    }
+  }
+
   &__item {
     @for $start from 1 through 2 {
       @for $end from $start through 2 {
         &--small--#{$start}-#{$end} {
           grid-column: #{$start} / #{$end + 1};
         }
-      }
-    }
-
-    &--tablet {
-      display: block;
-
-      @include onTablet {
-        display: grid;
-      }
-
-      @include onDesktop {
-        display: grid;
       }
     }
 

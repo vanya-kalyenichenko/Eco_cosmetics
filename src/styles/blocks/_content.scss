@@ -69,7 +69,7 @@
   &__photo {
     margin-bottom: 20px;
     position: relative;
-    right: 20px;
+    right: $small-width-gap;
     width: 100vw;
     height: 320px;
     background-image: url(../images/content__photo.png);
@@ -146,13 +146,37 @@
       text-transform: uppercase;
     }
 
+    &--container {
+      display: flex;
+      gap: 20px;
+      justify-content: end;
+    }
+
     &--photo {
+      transform: translateX(50%);
+      position: relative;
+      right: $small-width-gap;
+      margin-bottom: 30px;
+
       width: 380px;
       height: 395px;
       background-image: url(../images/interactive__photo.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: right;
+    }
+
+    &--stuffBox {
+      margin-top: 40px;
+      width: max-content;
+    }
+
+    &--stuff {
+      margin-bottom: 50px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: right;
     }
   }
 }

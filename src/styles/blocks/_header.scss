@@ -6,23 +6,27 @@
   }
 
   &__photo {
-    // position: relative;
-    // right: 20px;
+    position: relative;
+    right: $small-width-gap;
     margin-bottom: 25px;
 
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
+
+    @include onTablet {
+      width: 100%;
+    }
+
     height: 270px;
-    // background-image: url("../images/small__header__photo.svg");
+    background-image: url("../images/small__header__photo.svg");
 
     @include onTablet {
       height: 500px;
       right: 0;
       margin-bottom: 50px;
-      // background-image: url("../images/tablet__header__photo.png");
+      background-image: url("../images/tablet__header__photo.png");
     }
   }
 
