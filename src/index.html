@@ -32,7 +32,7 @@
   <div class="container">
     <body class="page__body">
       <header class="header">
-        <div class="header__top">
+        <nav class="header__top">
           <a href="#">
             <img
               src="./images/menu_opener.svg"
@@ -54,7 +54,7 @@
               class="icon icon--menu"
             >
           </a>
-        </div>
+        </nav>
 
         <div class="grid grid--tablet">
           <div
@@ -82,9 +82,9 @@
           20% of sales at a wild bird shelter
         </div>
 
-        <div class="button header__button">
+        <button class="button header__button">
           shop
-        </div>
+        </button>
       </header>
 
       <main class="content">
@@ -110,49 +110,55 @@
           </div>
         </section>
 
-        <section>
-          <div class="content__shop">
+        <section class="content__shop">
+          <div
+            class="content__shop--title"
+            id="shop"
+          >
             shop
           </div>
 
-          <div class="content__navigation">
+          <div class="content__shop--navigation">
             <div
-              class="content__navigation--chapter">
+              class="content__shop--navigation-chapter">
               face
             </div>
             <div
-              class="content__navigation--chapter">
+            class="content__shop--navigation-chapter">
               body
             </div>
-            <div class="content__navigation--chapter">
+            <div class="content__shop--navigation-chapter">
               hair
             </div>
-            <div class="content__navigation--chapter">
+            <div class="content__shop--navigation-chapter">
               candles
             </div>
           </div>
 
-          <div class="content__photo"></div>
+          <div class="content__shop--photo"></div>
 
-          <div class="content__oil">
+          <div class="content__shop--oil">
             Hydrophilic oil
           </div>
 
-          <div class="content__price">
+          <div class="content__shop--price">
             160 UAH
           </div>
 
-          <div class="button content__button">
+          <button class="button content__shop--button">
             all products
-          </div>
+          </button>
         </section>
 
-        <section>
-          <div class="content__creators">
+        <section class="content__creators">
+          <div
+            class="content__creators--title"
+            id="about"
+          >
             about the creators
           </div>
 
-          <div class="content__creators-info">
+          <div class="content__creators--info">
             <p class="content__creators-info--1">
             My name is Victoria, I`m a master at
             candle making and natural cosmetics.
@@ -174,9 +180,9 @@
             LEARN MORE
           </div>
 
-          <div class="button content__creators--button">
+          <button class="button content__creators--button">
             to contact us
-          </div>
+          </button>
         </section>
 
         <section class="content__interactive">
@@ -208,15 +214,114 @@
 
           </div>
 
+          <div class="more content__interactive--more">
+            LEARN MORE
+          </div>
 
+          <div class="content__interactive--eco">
+            <div class="content__interactive--property-1"></div>
+
+            <div class="content__interactive--property-info">
+              No synthetics and microplastics
+            </div>
+
+          </div>
+          <div class="content__interactive--eco">
+            <div class="content__interactive--property-2"></div>
+
+            <div class="content__interactive--property-info">
+              product packaging can be recycled or reused
+            </div>
+
+          </div>
+          <div class="content__interactive--eco">
+            <div class="content__interactive--property-3"></div>
+
+            <div class="content__interactive--property-info">
+              only natural ingredients
+            </div>
+
+          </div>
         </section>
 
-        <section>
-          contact us
+        <section class="content__contact_us">
+          <div
+            class="content__contact_us--title"
+            id="contact"
+          >
+            contact us
+          </div>
+
+          <div class="content__contact_us--text">
+            We will help you choose a product
+             that suits you and answer your
+             other questions
+          </div>
+
+          <form
+            action="#"
+            class="content__contact_us--form"
+            method="post"
+            id="form"
+          >
+            <input
+              type="text"
+              class="content__contact_us--style"
+              name="name"
+              placeholder="Your Name"
+              id="username"
+              required
+            >
+
+            <input
+              type="email"
+              class="content__contact_us--style"
+              name="email"
+              placeholder="E-Mail"
+              id="email"
+              required
+            >
+
+            <input
+              type="number"
+              class="content__contact_us--style"
+              name="number"
+              placeholder="Phone number"
+              id="number"
+              required
+            >
+
+            <input
+              type="text"
+              class="
+              content__contact_us--style"
+              name="message"
+              placeholder="Your Message"
+              id="message"
+              required
+            >
+          </form>
+
+          <button class="button content__contact_us--button">
+            send a message
+          </button>
+
         </section>
       </main>
 
-      <footer></footer>
+      <footer class="footer">
+        <div class="footer__nav">
+          <a href="#shop" class="footer__nav--link">
+            Shop
+          </a>
+          <a href="#contact" class="footer__nav--link">
+            Contact
+          </a>
+          <a href="#about" class="footer__nav--link">
+            About
+          </a>
+        </div>
+      </footer>
 
       <script type="text/javascript" src="scripts/main.js"></script>
     </body>
